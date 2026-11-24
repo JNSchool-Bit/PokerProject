@@ -1,5 +1,8 @@
+balance = 1410
+game1 =
 yes = ("yes", "y", "yeah", "yea", "ok")
 no = ("no", "na", "n")
+
 answer = input("Welcome to the game of Poker: Texas Hold'em! Do you know how to play this game? ").strip().lower()
 if answer in no:
     start = input("""That's ok. Here are the basic rules: 
@@ -35,10 +38,13 @@ Hand Rankings (Strongest to Weakest)
 • One pair: Two cards of the same rank.
 • High card: No matching ranks or flush/straight; highest card plays (ace is high).
 
-Do you know understand how to play the game? """)
+Do you know understand how to play the game? """).strip().lower()
     if answer in no:
         print("Please read the game manual provided, or search online. Once you understand, please restart game.")
-    else()
         #loop statement, skip to line 44 or 4?
 else:
-    start = input("Great! Should we start the game? ")
+    start = input("Great! Should we start the game? ").strip.lower()
+    if answer in no:
+        print("Ok. Please restart the game when ready.")
+    else:
+
